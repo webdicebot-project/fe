@@ -3,11 +3,7 @@
     <CCard class="mb-4">
       <CCardBody>
         <div class="mb-3">
-          <CFormSelect
-            aria-label="Default select example"
-            :options="bots"
-            @change="changeBot"
-          />
+          <CFormSelect aria-label="Default select example" :options="bots" @change="changeBot" />
         </div>
 
         <div class="mb-3">
@@ -15,16 +11,23 @@
         </div>
 
         <div class="d-grid gap-2">
-          <CButton
-            color="primary"
-            v-clipboard:copy="installer"
-            v-clipboard:success="onCopy"
-          >
+          <CButton color="primary" v-clipboard:copy="installer" v-clipboard:success="onCopy">
             Copy
           </CButton>
         </div>
       </CCardBody>
     </CCard>
+
+    <CCard v-show="tips" class="mb-4">
+      <CCardBody>
+        <h4>
+          <strong>Tips</strong>
+        </h4>
+
+        <pre>{{ tips }}</pre>
+      </CCardBody>
+    </CCard>
+
   </div>
 </template>
 
@@ -37,10 +40,16 @@ export default {
     return {
       bots,
       installer: '',
+      tips: ''
     }
   },
   methods: {
     changeBot(e) {
+      // console.log(e.target.value)
+      for (const element of bots) {
+        // console.log(element);
+        if (e.target.value === element.value) return this.tips = element.tips
+      }
       this.installer =
         `const BOT_API = '${api}';\n` +
         e.target.value +
@@ -54,4 +63,6 @@ await fetch(BOT_API + '/bot/init')
 }
 </script>
 
-<style></style>
+<style>
+
+</style>

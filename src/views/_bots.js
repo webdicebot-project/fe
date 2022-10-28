@@ -16,7 +16,7 @@ const bots = [
     value: `const CASINO_GAME = 'bc-limbo';`,
   },
   {
-    label: 'bch.games - dice (BETA)',
+    label: 'bch.games - dice',
     value: `const CASINO_GAME = 'bch-dice';`,
   },
   {

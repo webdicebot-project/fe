@@ -171,6 +171,8 @@ async function dobet() {
         <p>
           <a href="https://bc.game/i-1fz8gf65-n" target="_blank"> bc.game </a>
           <br />
+          <a href="https://bch.games/play/UT7QfUO3" target="_blank"> bch.games (NEW) </a>
+          <br />
           <a href="https://betfury.io/?r=5f86fffc38b5653094d3206b" target="_blank">
             betfury.io
           </a>

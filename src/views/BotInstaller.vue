@@ -48,7 +48,7 @@ export default {
       // console.log(e.target.value)
       for (const element of bots) {
         // console.log(element);
-        if (e.target.value === element.value) return this.tips = element.tips
+        if (e.target.value === element.value) this.tips = element.tips
       }
       this.installer =
         `const BOT_API = '${api}';\n` +

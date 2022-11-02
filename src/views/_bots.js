@@ -63,10 +63,10 @@ example: betfury.io`,
     label: 'casinoroyale.bet - dice classic',
     value: `const CASINO_GAME = 'casinoroyale-dice-classic';`,
   },
-  {
-    label: 'chips.gg - dice',
-    value: `const CASINO_GAME = 'chips-dice';`,
-  },
+  // {
+  //   label: 'chips.gg - dice',
+  //   value: `const CASINO_GAME = 'chips-dice';`,
+  // },
   {
     label: 'crypto.games - dice',
     value: `const CASINO_GAME = 'crypto-games-dice';`,

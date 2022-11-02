@@ -13,7 +13,7 @@
           bound to have a few bugs. Use the bot at your own risk. Should you
           come accross a bug, please report it with as much detail as possible
           to
-          <a href="https://t.me/mhqb365" target="_blank">t.me/mhqb365</a>
+          <a href="https://t.me/webdicebotgroup" target="_blank">WebDiceBot's Group</a>
         </p>
       </strong>
     </CAlert>
@@ -135,7 +135,7 @@ async function dobet() {
 
         <p>
           Suggest browser for best performance: FireFox, Chrome, Microsoft Edge,
-          Brave, Coc Coc, Kiwi Browser (mobile)
+          Brave, Coc Coc, Kiwi Browser (Android)
           <br />
           Suggest dice scripts:
           <a href="https://github.com/webdicebot-project/awesome-scripts" target="_blank">
@@ -156,6 +156,10 @@ async function dobet() {
           You must follow syntax of
           <a href="https://lua.org/manual/5.3" target="_blank"> Lua v5.3 </a>
           when you use Lua script
+          <br />
+          Use
+          <a href="https://www.jdoodle.com/execute-lua-online/" target="_blank">JDoodle.com</a>
+          to check clean your dice script
         </p>
       </CCardBody>
     </CCard>
@@ -188,8 +192,6 @@ async function dobet() {
           <a href="https://casinoroyale.bet" target="_blank">
             casinoroyale.bet
           </a>
-          <br />
-          <a href="https://chips.gg/?r=mhqb365" target="_blank"> chips.gg </a>
           <br />
           <a href="https://crypto.games" target="_blank"> crypto.games </a>
           <br />
@@ -237,12 +239,12 @@ async function dobet() {
           <br />
           <a href="https://sicodice.com" target="_blank"> sicodice.com </a>
           <br />
-          <a href="https://starbets.io/ref=r3oaasMDgA" target="_blank">
-            starbets.io
-          </a>
-          <br />
           <a href="https://stake.com/?c=1dddd271b9" target="_blank">
             stake.com
+          </a>
+          <br />
+          <a href="https://starbets.io/ref=r3oaasMDgA" target="_blank">
+            starbets.io
           </a>
           <br />
           <a href="https://windice.io/?r=mhqb365" target="_blank">

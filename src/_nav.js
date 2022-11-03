@@ -76,6 +76,18 @@ export default [
   },
   {
     component: 'CNavTitle',
+    name: 'Extra',
+    permission: 0,
+  },
+  {
+    component: 'CNavItem',
+    name: 'Beta Installer',
+    to: '/beta-installer',
+    icon: 'cil-baby',
+    permission: 0,
+  },
+  {
+    component: 'CNavTitle',
     name: 'Admin',
     permission: 2,
   },

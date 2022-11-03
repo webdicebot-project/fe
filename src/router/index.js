@@ -16,6 +16,12 @@ const routes = [
         component: () => import('@/views/GetStarted.vue'),
       },
       {
+        path: '/beta-installer',
+        name: 'Beta Installer',
+        meta: { requiresAuth: true },
+        component: () => import('@/views/BetaInstaller.vue'),
+      },
+      {
         path: '/bot-installer',
         name: 'Bot Installer',
         meta: { requiresAuth: true },

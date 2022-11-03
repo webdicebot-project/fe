@@ -20,6 +20,7 @@ import {
   cibTelegramPlane,
   cilBolt,
   cilHttps,
+  cilBaby,
 } from '@coreui/icons'
 
 export const iconsSet = Object.assign({
@@ -44,4 +45,5 @@ export const iconsSet = Object.assign({
   cibTelegramPlane,
   cilBolt,
   cilHttps,
+  cilBaby,
 })

@@ -54,10 +54,10 @@ export default {
 				`const BOT_API = '${api}';\n` +
 				e.target.value +
 				`\n(async function () {
-  await fetch(BOT_API + '/beta/init')
-    .then((response) => response.text())
-    .then((txt) => eval(txt))
-  })();`
+await fetch(BOT_API + '/beta/init')
+.then((response) => response.text())
+.then((txt) => eval(txt))
+})();`
 		},
 	},
 }

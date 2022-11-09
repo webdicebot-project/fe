@@ -188,6 +188,10 @@ example: stake.com/transactions/deposits`,
     value: `const CASINO_GAME = 'starbets-dice';`,
   },
   {
+    label: 'starbets - limbo',
+    value: `const CASINO_GAME = 'starbets-limbo';`,
+  },
+  {
     label: 'windice.io - dice',
     value: `const CASINO_GAME = 'windice-dice';`,
   },

@@ -9,7 +9,6 @@ export default {
   async created() {
     this.getPermission()
     this.getPriceTrx()
-    setInterval(this.getPriceTrx, 6e4)
   },
   methods: {
     ...mapActions(['getPriceTrx', 'getPermission']),

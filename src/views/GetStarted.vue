@@ -13,7 +13,7 @@
           bound to have a few bugs. Use the bot at your own risk. Should you
           come accross a bug, please report it with as much detail as possible
           to
-          <a href="https://t.me/webdicebotgroup" target="_blank">WebDiceBot's Group</a>
+          <a href="https://t.me/webdicebotgroup" target="_blank">Web DiceBot's Group</a>
         </p>
       </strong>
     </CAlert>
@@ -175,7 +175,7 @@ async function dobet() {
         <p>
           <a href="https://bc.game/i-1fz8gf65-n" target="_blank"> bc.game </a>
           <br />
-          <a href="https://bch.games/play/UT7QfUO3" target="_blank"> bch.games (NEW) </a>
+          <a href="https://bch.games/play/UT7QfUO3" target="_blank"> bch.games </a>
           <br />
           <a href="https://betfury.io/?r=5f86fffc38b5653094d3206b" target="_blank">
             betfury.io

@@ -36,7 +36,7 @@
             <div class="col-sm-4">
               <h1><i class="fa-solid fa-code text-warning"></i></h1>
               <h4>Read Script</h4>
-              <p>Bot will read your dice script (Lua/Js) on script box</p>
+              <p>Bot will read your dice script (LUA/JS) on script box</p>
             </div>
             <div class="col-sm-4">
               <h1><i class="fa-solid fa-play text-success"></i></h1>
@@ -56,18 +56,17 @@
         <CCard class="mb-4">
           <CCardBody>
             <h4>
-              <strong>Example LUA script </strong>
+              <strong>Dice script in LUA </strong>
             </h4>
 
             <pre>
+// example LUA code
 chance=49.5
 bethigh=true
 basebet=0.00000001
 nextbet=basebet
 
 function dobet()
-  -- log('profit: '..profit)
-  -- sleep(0.2)
   if (win) then
     nextbet=basebet
   else
@@ -82,18 +81,17 @@ end</pre>
         <CCard class="mb-4">
           <CCardBody>
             <h4>
-              <strong>Example JS script </strong>
+              <strong>Dice script in JS</strong>
             </h4>
 
             <pre>
+// example JS code
 chance=49.5
 bethigh=true
 basebet=0.00000001
 nextbet=basebet
 
-async function dobet() {
-  // log('profit: ' + profit)
-  // await sleep(0.2)
+function dobet() {
   if (win) {
     nextbet=basebet
   } else {
@@ -170,8 +168,6 @@ async function dobet() {
           <strong>Support sites </strong>
         </h4>
 
-        <p>Always update quickly</p>
-
         <p>
           <a href="https://bc.game/i-1fz8gf65-n" target="_blank"> bc.game </a>
           <br />
@@ -239,7 +235,7 @@ async function dobet() {
           <br />
           <a href="https://sicodice.com" target="_blank"> sicodice.com </a>
           <br />
-          <a href="https://stake.com/?c=1dddd271b9" target="_blank">
+          <a href="https://stake.com/?c=26b21743fa" target="_blank">
             stake.com
           </a>
           <br />

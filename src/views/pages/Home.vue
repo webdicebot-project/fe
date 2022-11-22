@@ -9,22 +9,21 @@
             </h2>
 
             <p>
-              Automate betting with programmer mode directly on dice sites —
-              since 2019
+              Automate betting with programmer mode directly on dice sites
             </p>
 
-            <router-link to="/get-started">
-              <button type="button" class="btn btn-warning btn-lg mt-4 mb-5">
-                Get Started
-              </button>
-            </router-link>
+            <p class="d-inline">
+              <router-link to="/get-started" class="mt-4 mb-2">
+                <button type="button" class="btn btn-warning btn-lg">
+                  Get Started
+                </button>
+              </router-link>
+              with 0.2$ per day
+            </p>
           </div>
-          <div class="col-md-8">
-            <img
-              :src="$options.photo"
-              alt="Web DiceBot Interface"
-              class="w-100 rounded shadow-lg animate__animated animate__zoomIn"
-            />
+          <div class="col-md-8 d-none d-md-block">
+            <img :src="$options.photo" alt="Web DiceBot"
+              class="w-100 rounded shadow-lg animate__animated animate__zoomIn" />
           </div>
         </div>
       </div>

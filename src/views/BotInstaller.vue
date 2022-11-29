@@ -51,10 +51,10 @@ export default {
         if (e.target.value === element.value) this.tips = element.tips
       }
       this.installer =
-        `const BOT_API = '${api}';\n` +
+        `const WDB_API = '${api}';\n` +
         e.target.value +
         `\n(async function () {
-await fetch(BOT_API + '/bot/init')
+await fetch(WDB_API + '/bot/init')
   .then((response) => response.text())
   .then((txt) => eval(txt))
 })();`

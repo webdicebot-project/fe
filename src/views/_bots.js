@@ -159,13 +159,13 @@ example: megaplay.io`,
     label: 'punt.com - dice',
     value: `const CASINO_GAME = 'punt-dice';`,
     tips: `Paste installer script at page without load bet\n
-example: punt.com/casino/group/originals/`,
+example: punt.com/affiliates/overview`,
   },
   {
     label: 'punt.com - limbo',
     value: `const CASINO_GAME = 'punt-limbo';`,
     tips: `Paste installer script at page without load bet\n
-example: punt.com/casino/group/originals/`,
+example: punt.com/affiliates/overview`,
   },
   {
     label: 'sicodice.com',

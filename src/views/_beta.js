@@ -107,10 +107,10 @@ example: betfury.io`,
     label: 'jacksclub.io - dice',
     value: `const CASINO_GAME = 'jacksclub-dice';`,
   },
-  // {
-  //   label: 'luckybird.io - dice',
-  //   value: `const CASINO_GAME = 'luckybird-dice';`,
-  // },
+  {
+    label: 'luckybird.io - dice',
+    value: `const CASINO_GAME = 'luckybird-dice';`,
+  },
   {
     label: 'luckydiamond.io - dice',
     value: `const CASINO_GAME = 'luckydiamond-dice';`,

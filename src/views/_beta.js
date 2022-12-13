@@ -172,8 +172,12 @@ example: punt.com/affiliates/overview`,
 example: punt.com/affiliates/overview`,
   },
   {
-    label: 'sicodice.com',
-    value: `const CASINO_GAME = 'sicodice';`,
+    label: 'sicodice.com - bonus',
+    value: `const CASINO_GAME = 'sicodice-bonus';`,
+  },
+  {
+    label: 'sicodice.com - main',
+    value: `const CASINO_GAME = 'sicodice-main';`,
   },
   {
     label: 'stake.com - dice',

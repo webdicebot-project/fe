@@ -51,7 +51,7 @@ export default {
       try {
         if (!this.message) return this.notify('Please enter Message')
         this.isLoading = true
-        const { data } = await axios.post('/user/notify', {
+        const { data } = await axios.post('/user/notice', {
           to: this.to,
           message: this.message,
         })

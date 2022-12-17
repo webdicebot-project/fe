@@ -89,10 +89,10 @@ const routes = [
         component: () => import('@/views/admin/InvoiceManager.vue'),
       },
       {
-        path: '/send-notify',
-        name: 'Send Notify',
+        path: '/send-notice',
+        name: 'Send Notice',
         meta: { requiresAuth: true },
-        component: () => import('@/views/admin/SendNotify.vue'),
+        component: () => import('@/views/admin/SendNotice.vue'),
       },
     ],
   },

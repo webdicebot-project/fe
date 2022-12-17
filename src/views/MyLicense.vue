@@ -9,7 +9,7 @@
             <CTableRow>
               <CTableHeaderCell scope="col">License</CTableHeaderCell>
               <CTableHeaderCell scope="col">Expired</CTableHeaderCell>
-              <CTableHeaderCell scope="col"></CTableHeaderCell>
+              <CTableHeaderCell scope="col">Control</CTableHeaderCell>
             </CTableRow>
           </CTableHead>
           <CTableBody>
@@ -41,7 +41,7 @@
                     })
                   "
                 >
-                  Renew
+                  Renew now
                 </CButton>
                 <CButton
                   color="warning"
@@ -57,7 +57,7 @@
                     })
                   "
                 >
-                  {{ item.autoRenew ? 'Disable' : 'Enable' }} Auto Renew
+                  {{ item.autoRenew ? 'Disable' : 'Enable' }} auto renew
                 </CButton>
               </CTableDataCell>
             </CTableRow>

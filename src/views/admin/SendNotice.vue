@@ -5,7 +5,7 @@
         <div class="mb-3">
           <CFormInput
             type="text"
-            placeholder="MemberID, empty to all"
+            placeholder="MemberID, empty to send all"
             v-model="to"
           />
         </div>

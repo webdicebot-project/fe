@@ -37,9 +37,7 @@
           <CTableBody>
             <CTableRow v-for="doc in docs" :key="doc._id">
               <CTableDataCell>
-                {{
-                  $options.moment(doc.createdAt).format('DD/MM/YYYY HH:mm:ss')
-                }}
+                {{ $options.moment(doc.createdAt).format('DD/MM/YYYY HH:mm:ss') }}
               </CTableDataCell>
               <CTableDataCell>
                 {{ doc.idUser }}
@@ -111,4 +109,6 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+
+</style>

@@ -32,34 +32,30 @@
               <CTableHeaderCell scope="col">Time</CTableHeaderCell>
               <CTableHeaderCell scope="col">License</CTableHeaderCell>
               <CTableHeaderCell scope="col">Expired</CTableHeaderCell>
-              <CTableHeaderCell scope="col">Auto Renew</CTableHeaderCell>
+              <CTableHeaderCell scope="col">AutoRenew</CTableHeaderCell>
               <CTableHeaderCell scope="col">User</CTableHeaderCell>
             </CTableRow>
           </CTableHead>
           <CTableBody>
             <CTableRow v-for="doc in docs" :key="doc._id">
               <CTableDataCell>
-                {{
-                  $options.moment(doc.createdAt).format('DD/MM/YYYY HH:mm:ss')
-                }}
+                {{ $options.moment(doc.createdAt).format('DD/MM/YYYY HH:mm:ss') }}
               </CTableDataCell>
               <CTableDataCell>
-                <span
-                  class="copy"
-                  v-clipboard:copy="doc.license"
-                  v-clipboard:success="onCopy"
-                >
+                <span class="copy" v-clipboard:copy="doc.license" v-clipboard:success="onCopy">
                   {{ getLicense(doc.license) }}
                   <CIcon name="cil-copy" />
                 </span>
               </CTableDataCell>
               <CTableDataCell>
-                {{
-                  $options.moment(doc.expiredAt).format('DD/MM/YYYY HH:mm:ss')
-                }}
+                <CBadge v-if="doc.expired" color="danger">It's over</CBadge>
+                <span v-else>
+                  {{ $options.moment(doc.expiredAt).format('DD/MM/YYYY HH:mm:ss') }}
+                </span>
               </CTableDataCell>
               <CTableDataCell>
-                {{ doc.autoRenew }}
+                <CBadge v-if="doc.autoRenew" color="success">Yes</CBadge>
+                <CBadge v-else color="warning">No</CBadge>
               </CTableDataCell>
               <CTableDataCell>
                 {{ doc.user.idUser }}
@@ -129,4 +125,6 @@ export default {
 }
 </script>
 
-<style></style>
+<style>
+
+</style>

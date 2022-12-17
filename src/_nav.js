@@ -114,8 +114,8 @@ export default [
   },
   {
     component: 'CNavItem',
-    name: 'Send Notify',
-    to: '/send-notify',
+    name: 'Send Notice',
+    to: '/send-notice',
     icon: 'cib-telegram-plane',
     permission: 2,
   },

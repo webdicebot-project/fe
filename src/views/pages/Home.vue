@@ -33,7 +33,7 @@
       </div>
     </div>
 
-    <div class="fixed-bottom bg-dark text-center text-white">
+    <div class="fixed-bottom black text-center text-white">
       Web DiceBot &copy; 2019
     </div>
   </div>
@@ -50,4 +50,8 @@ export default {
 
 <style scoped>
 @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css');
+
+.black {
+  background-color: #222;
+}
 </style>

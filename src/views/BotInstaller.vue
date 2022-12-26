@@ -20,11 +20,7 @@
 
     <CCard v-show="tips" class="mb-4">
       <CCardBody>
-        <h4>
-          <strong>Tips</strong>
-        </h4>
-
-        <pre>{{ tips }}</pre>
+        <pre><strong>Tips</strong> {{ tips }}</pre>
       </CCardBody>
     </CCard>
 

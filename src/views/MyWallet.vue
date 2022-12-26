@@ -8,29 +8,22 @@
           <div class="balance">
             <span>
               <h2>{{ wallet.balance }} TRX</h2>
-              ${{
-                Number(wallet.balance * $store.state.priceTrx.usd).toFixed(2)
-              }}
+              ≈{{
+    Number(wallet.balance * $store.state.priceTrx.usd).toFixed(2)
+}} USD
             </span>
           </div>
 
           <p class="mt-4 mb-0 small">
-            <CBadge
-              color="light"
-              shape="rounded-pill"
-              v-c-tooltip="
-                'All transactions except for queries consume Bandwidth. Each account can get 1,500 Bandwidth a day for free'
-              "
-              class="copy text-dark"
-            >
+            <span>
+              {{ wallet.bandwidth }}
+            </span>
+            Bandwidth
+            <CBadge color="light" shape="rounded-pill" v-c-tooltip="
+  'All transactions except for queries consume Bandwidth. Each account can get 1,500 Bandwidth a day for free'
+" class="copy text-dark">
               ?
             </CBadge>
-            Bandwidth:
-            <span>
-              {{
-                wallet.bandwidth.freeNetLimit - wallet.bandwidth.freeNetUsed
-              }}/{{ wallet.bandwidth.freeNetLimit }}
-            </span>
           </p>
         </div>
       </CCardBody>
@@ -38,29 +31,21 @@
 
     <CNav variant="tabs" role="tablist">
       <CNavItem>
-        <CNavLink
-          href="javascript:void(0);"
-          :active="tabPaneActiveKey === 1"
-          @click="
-            () => {
-              tabPaneActiveKey = 1
-            }
-          "
-        >
+        <CNavLink href="javascript:void(0);" :active="tabPaneActiveKey === 1" @click="
+  () => {
+    tabPaneActiveKey = 1
+  }
+">
           <CIcon name="cil-arrow-circle-bottom" size="lg" />
         </CNavLink>
       </CNavItem>
 
       <CNavItem>
-        <CNavLink
-          href="javascript:void(0);"
-          :active="tabPaneActiveKey === 2"
-          @click="
-            () => {
-              tabPaneActiveKey = 2
-            }
-          "
-        >
+        <CNavLink href="javascript:void(0);" :active="tabPaneActiveKey === 2" @click="
+  () => {
+    tabPaneActiveKey = 2
+  }
+">
           <CIcon name="cil-arrow-circle-top" size="lg" />
         </CNavLink>
       </CNavItem>
@@ -77,33 +62,20 @@
             </p>
 
             <div class="mb-4" style="height: 200px">
-              <QRCodeVue3
-                :value="wallet.address"
-                :width="200"
-                :height="200"
-                :cornersSquareOptions="{
-                  type: 'square',
-                }"
-                :dotsOptions="{
-                  type: 'square',
-                }"
-              />
+              <QRCodeVue3 :value="wallet.address" :width="200" :height="200" :cornersSquareOptions="{
+  type: 'square',
+}" :dotsOptions="{
+  type: 'square',
+}" />
             </div>
 
             <div class="mb-4">
-              <span
-                class="copy"
-                v-clipboard:copy="wallet.address"
-                v-clipboard:success="onCopy"
-              >
+              <span class="copy" v-clipboard:copy="wallet.address" v-clipboard:success="onCopy">
                 {{ getAddress(wallet.address) }}
                 <CIcon name="cil-copy" />
               </span>
               &nbsp;
-              <a
-                :href="$options.explorer + 'address/' + wallet.address"
-                target="_blank"
-              >
+              <a :href="$options.explorer + 'address/' + wallet.address" target="_blank">
                 <CIcon name="cil-external-link" />
               </a>
             </div>
@@ -120,19 +92,11 @@
             </p>
 
             <div class="mb-4">
-              <CFormInput
-                type="text"
-                placeholder="Receiving address"
-                v-model="to"
-              />
+              <CFormInput type="text" placeholder="Receiving address" v-model="to" />
             </div>
 
             <div class="mb-4">
-              <CFormInput
-                type="number"
-                placeholder="Amount"
-                v-model="amount"
-              />
+              <CFormInput type="number" placeholder="Amount" v-model="amount" />
             </div>
 
             <CInputGroup class="mb-4">
@@ -153,7 +117,7 @@
                 <CSpinner size="sm" />
               </CButton>
 
-              <CButton v-else color="primary" @click="send"> Withdraw </CButton>
+              <CButton v-else color="primary" @click="send"> Send </CButton>
             </div>
           </CCardBody>
         </CCard>
@@ -187,10 +151,7 @@ export default {
       wallet: {
         address: '',
         balance: 0,
-        bandwidth: {
-          freeNetLimit: 0,
-          freeNetUsed: 0,
-        },
+        bandwidth: 0
       },
       to: '',
       amount: '',

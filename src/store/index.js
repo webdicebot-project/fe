@@ -50,6 +50,16 @@ export default createStore({
         // console.log(permission)
         context.commit('updatePermission', permission)
       } catch (error) {
+        console.error(error)
+      }
+    },
+    async getNewAccessToken(context) {
+      try {
+        if (localStorage.getItem('token')) {
+          const { data } = await axios.get('/user/generateAccessToken')
+          console.log(data)
+        }
+      } catch (error) {
         // console.error(error)
       }
     },

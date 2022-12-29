@@ -34,7 +34,7 @@
     </div>
 
     <div class="fixed-bottom black text-center text-white">
-      Web DiceBot &copy; 2019
+      Web DiceBot since 2019
     </div>
   </div>
 </template>

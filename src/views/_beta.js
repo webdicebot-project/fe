@@ -88,6 +88,10 @@ example: betfury.io`,
     value: `const CASINO_GAME = 'duckdice-main';`,
   },
   {
+    label: 'duckdice.io - xmas',
+    value: `const CASINO_GAME = 'duckdice-xmas';`,
+  },
+  {
     label: 'faucetpay.io - dice',
     value: `const CASINO_GAME = 'faucetpay-dice';`,
   },

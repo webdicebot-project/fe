@@ -206,6 +206,9 @@
               <a href="https://casinoroyale.bet" target="_blank">
                 casinoroyale.bet,
               </a>
+              <a href="https://coins.game/c/7874_366b2415" target="_blank">
+                coins.game,
+              </a>
               <a href="https://crypto.games" target="_blank"> crypto.games, </a>
               <a href="https://cryptoplay.io/?c=mhqb365" target="_blank">
                 cryptoplay.io,
@@ -217,6 +220,9 @@
               <a href="https://freebitco.in" target="_blank"> freebitco.in, </a>
               <a href="https://jacksclub.io/?r=~mhqb365" target="_blank">
                 jacksclub.io,
+              </a>
+              <a href="https://luckybird.vip/?c=c_mhqb365" target="_blank">
+                luckybird.io,
               </a>
               <a href="https://luckydiamond.io/r/mhqb365" target="_blank">
                 luckydiamond.io,

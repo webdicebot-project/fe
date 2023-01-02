@@ -119,10 +119,14 @@ example: betfury.io`,
     label: 'jacksclub.io - dice',
     value: `const CASINO_GAME = 'jacksclub-dice';`,
   },
-  // {
-  //   label: 'luckybird.io - dice',
-  //   value: `const CASINO_GAME = 'luckybird-dice';`,
-  // },
+  {
+    label: 'luckybird.io - dice',
+    value: `const CASINO_GAME = 'luckybird-dice';`,
+    tips: `Paste installer script at game page\n
+example: luckybird.io/dice\n
+Disable HOTKEYS before paste installer script\n
+Click Cancel button when have alert: something wrong with your network, please reconnect !`,
+  },
   {
     label: 'luckydiamond.io - dice',
     value: `const CASINO_GAME = 'luckydiamond-dice';`,

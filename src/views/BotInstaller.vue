@@ -50,9 +50,9 @@ export default {
         `const WDB_API = '${api}';\n` +
         e.target.value +
         `\n(async function () {
-await fetch(WDB_API + '/bot/init')
-  .then((response) => response.text())
-  .then((txt) => eval(txt))
+  await fetch(WDB_API + '/bot/init')
+    .then((response) => response.text())
+    .then((txt) => eval(txt))
 })();`
     },
   },

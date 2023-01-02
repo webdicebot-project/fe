@@ -27,6 +27,13 @@ export default [
   },
   {
     component: 'CNavItem',
+    name: 'Beta Installer',
+    to: '/beta-installer',
+    icon: 'cil-baby',
+    permission: 0,
+  },
+  {
+    component: 'CNavItem',
     name: 'Buy License',
     to: '/buy-license',
     icon: 'cil-cart',
@@ -72,18 +79,6 @@ export default [
     name: 'Logout',
     to: '/pages/logout',
     icon: 'cil-account-logout',
-    permission: 0,
-  },
-  {
-    component: 'CNavTitle',
-    name: 'Extra',
-    permission: 0,
-  },
-  {
-    component: 'CNavItem',
-    name: 'Beta Installer',
-    to: '/beta-installer',
-    icon: 'cil-baby',
     permission: 0,
   },
   {

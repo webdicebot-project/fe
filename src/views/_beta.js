@@ -145,6 +145,11 @@ betfury.io`,
     tips: `See video tips: https://youtu.be/FEuWOEFRrMM`,
   },
   {
+    label: 'luckybird.io - limbo (NEW)',
+    value: `const CASINO_GAME = 'luckybird-limbo';`,
+    tips: `See video tips: https://youtu.be/FEuWOEFRrMM`,
+  },
+  {
     label: 'luckydiamond.io - dice',
     value: `const CASINO_GAME = 'luckydiamond-dice';`,
   },

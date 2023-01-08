@@ -3,7 +3,7 @@
 		<CCard class="mb-4">
 			<CCardBody>
 				<div class="mb-3">
-					<CFormSelect aria-label="Default select example" :options="beta" @change="changeBot" />
+					<CFormSelect :options="beta" @change="changeBot" />
 				</div>
 
 				<div class="mb-3">
@@ -23,10 +23,9 @@
 				<pre>{{ tips }}</pre>
 			</CCardBody>
 		</CCard>
-
 	</div>
 </template>
-  
+
 <script>
 import api from '@/configs/api'
 import beta from './_beta'
@@ -36,30 +35,36 @@ export default {
 		return {
 			beta,
 			installer: '',
-			tips: ''
+			tips: '',
 		}
 	},
 	methods: {
 		changeBot(e) {
-			// console.log(e.target.value)
-			for (const element of beta) {
-				// console.log(element);
-				if (e.target.value === element.value) this.tips = element.tips
-			}
-			this.installer =
-				`const WDB_API = '${api}';\n` +
-				e.target.value +
-				`\n(async function () {
-  await fetch(WDB_API + '/beta/init')
-    .then((response) => response.text())
-    .then((txt) => eval(txt))
+			try {
+				// console.log(e.target.value)
+				for (const bot in beta) {
+					if (beta[bot].value === e.target.value) {
+						// console.log(bot);
+						// console.log(beta[bot]);
+						this.tips = beta[bot].tips
+						this.installer =
+							`const WDB_API = '${api}';\n` +
+							e.target.value +
+							`\n(async function () {
+ await fetch(WDB_API + '/beta/init')
+  .then((response) => response.text())
+  .then((txt) => eval(txt))
 })();`
+					}
+				}
+			} catch (error) {
+				// console.error(error)
+			}
 		},
 	},
 }
 </script>
-  
+
 <style>
 
 </style>
-  

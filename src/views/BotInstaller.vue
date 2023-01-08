@@ -20,7 +20,7 @@
 
     <CCard v-show="tips" class="mb-4">
       <CCardBody>
-        <pre><strong>Tips</strong> {{ tips }}</pre>
+        <pre>{{ tips }}</pre>
       </CCardBody>
     </CCard>
 
@@ -42,18 +42,22 @@ export default {
   methods: {
     changeBot(e) {
       // console.log(e.target.value)
-      for (const element of bots) {
-        // console.log(element);
-        if (e.target.value === element.value) this.tips = element.tips
-      }
-      this.installer =
-        `const WDB_API = '${api}';\n` +
-        e.target.value +
-        `\n(async function () {
-  await fetch(WDB_API + '/bot/init')
-    .then((response) => response.text())
-    .then((txt) => eval(txt))
+      for (const bot in bots) {
+        // console.log(bot);
+        if (bots[bot].value === e.target.value) {
+          // console.log(bot);
+          // console.log(beta[bot]);
+          this.tips = bots[bot].tips
+          this.installer =
+            `const WDB_API = '${api}';\n` +
+            e.target.value +
+            `\n(async function () {
+ await fetch(WDB_API + '/bot/init')
+  .then((response) => response.text())
+  .then((txt) => eval(txt))
 })();`
+        }
+      }
     },
   },
 }

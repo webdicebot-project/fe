@@ -100,9 +100,12 @@
       <CCol>
         <CCard>
           <CCardBody>
-            <video controls :src="$options.video" class="border border-white w-100"></video>
-
             <p>
+              👉 See video tutorial:
+              <a href="https://youtu.be/-SvfHymWfEk" target="_blank">
+                https://youtu.be/-SvfHymWfEk
+              </a>
+              <br />
               👉 Browser for best performance: FireFox, Chrome, Microsoft Edge,
               Brave, Coc Coc, Kiwi Browser (Android)
               <br />
@@ -207,7 +210,7 @@
                 casinoroyale.bet,
               </a>
               <a href="https://coins.game/c/7874_366b2415" target="_blank">
-                coins.game,
+                coins.game (NEW),
               </a>
               <a href="https://crypto.games" target="_blank"> crypto.games, </a>
               <a href="https://cryptoplay.io/?c=mhqb365" target="_blank">
@@ -222,7 +225,7 @@
                 jacksclub.io,
               </a>
               <a href="https://luckybird.vip/?c=c_mhqb365" target="_blank">
-                luckybird.io,
+                luckybird.io (NEW),
               </a>
               <a href="https://luckydiamond.io/r/mhqb365" target="_blank">
                 luckydiamond.io,
@@ -266,10 +269,11 @@
 </template>
 
 <script>
-import video from '@/assets/webdicebot.mp4'
 import { CCard, CCardBody, CCol } from '@coreui/vue';
+import WebDiceBot from '@/assets/WebDiceBot.mp4'
+
 export default {
-  video,
+  WebDiceBot,
   data() {
     return {
       urlTelegramBot: process.env.NODE_ENV == "development"
@@ -282,5 +286,5 @@ export default {
 </script>
 
 <style scoped>
-/* @import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css'); */
+
 </style>
